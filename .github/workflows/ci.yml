@@ -19,3 +19,6 @@ jobs:
 
       - name: Y ahora quiero saber con que version de git estoy trabajando
         run: git version
+
+      - name: Y despedida de clase
+        run: echo "que tengais buen finde, que os regalen muchas cosas, que sois muy buena gente"
