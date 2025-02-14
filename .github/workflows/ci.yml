@@ -3,15 +3,19 @@ name: CI
 on: [push]
 
 jobs:
+  build:
+    runs-on: windows-latest
 
-build:
+    steps:
 
-runs-on: windows-latest
+      - name: Que se duerma el proceso
+        run: sleep 4
 
-steps:
+      - name: A que hora ha terminado el despliegue chicos / as
+        run: date
 
-- name: Ver la hora
-run: date
+      - name: Quiero ver si mi página funciona
+        run: curl -k "https://as.com"
 
-- name: Esperar 3 segundos
-run: sleep 3
+      - name: Y ahora quiero saber con que version de git estoy trabajando
+        run: git version
