@@ -1,0 +1,17 @@
+name: CI
+
+on: [push]
+
+jobs:
+
+build:
+
+runs-on: windows-latest
+
+steps:
+
+- name : Ver la hora
+run:date
+
+- name : Esperar x segundos
+run:sleep 4
